@@ -1,0 +1,26 @@
+import os
+import json
+from pathlib import Path
+
+user_agents_file = Path(__file__).parents[3] / 'files/chrome_user_agents.json'
+
+file = os.fspath(user_agents_file)
+if os.path.exists(file):
+    with open(file, 'r') as f: 
+        user_agents = list(json.load(f))
+
+USER_AGENTS = user_agents
+
+
+ROBOTSTXT_OBEY = False
+
+
+RANDOMIZE_DOWNLOAD_DELAY = True
+
+
+COOKIES_ENABLED = False
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+}

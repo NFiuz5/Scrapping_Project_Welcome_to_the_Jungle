@@ -1,0 +1,1 @@
+The Opera driver does not support w3c syntax, so we recommend using chromedriver to work with Opera.
