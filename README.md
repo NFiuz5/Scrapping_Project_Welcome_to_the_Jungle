@@ -6,6 +6,7 @@ Scraping project at Elba :
 This directory contains a web scraper for the website welcometothejungle and a processing script for the results of the scraper
 
 If you want to launch the scraper, all commands are reminded in “Scrapers/COMMANDS.txt”
+
 You can download the virtual environment by clicking on this link : https://drive.google.com/file/d/189HbCBkJbv72bJY48SPo9Sgp3v089KPR/view?usp=sharing
 
 -Go to the Scraping directory, in my case on the Desktop
