@@ -1,0 +1,28 @@
+COMMANDS :
+
+to active the virtual env :
+cd env_scraping/Scripts
+source activate
+
+to deactivate the virtual env :
+source deactivate
+
+to create a scrapy project :
+scrapy startproject <project name>
+
+to create a basic spider :
+cd <project name>/<project name>/spiders
+scrapy genspider <spider_name> <website to scrape url>
+
+to create a crawler :
+cd <project name>/<project name>/spiders
+scrapy genspider -t crawl <spider_name> <website to scrape url>
+
+to run a spider :
+cd <project name>/<project name>/spiders
+scrapy runspider <spider_name.py>
+(or) scrapy crawl <spider_name>
+
+to save the results of a spider :
+cd <project name>/<project name>/spiders
+scrapy crawl <spider_name> -o <save_file>
